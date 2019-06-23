@@ -9,3 +9,8 @@
   $ ./web-echo 
   web-echo is running on 80 port.
 
+## Running on different Port; use -p port
+  $ ./web-echo -p 8000                     
+  2019/06/23 23:25:28 Listening on port 8000...
+
+if port number not provided; default port 80 will be used
