@@ -47,3 +47,24 @@ If no -m provided; default message is be "Message"
 
   $ curl http://localhost:8000/greet
   Message  
+  
+## Docker Image building
+
+  Before Building Docker image make sure two things:
+  - Docker Application must be available
+  - Build the OS compatiable binary
+  
+  Then we use the `Dockerfile` to build the Docker image.
+
+### Build Binary for OS compatible 
+
+  $ GOOS=linux go build . 
+  
+### Build Docker Image
+
+  $ docker build . -f Dockerfile -t web-echo
+  
+### Build Binary and Docker Image as one liner cmd
+
+  $ GOOS=linux go build . && docker build . -f Dockerfile -t mygosvr
+  
