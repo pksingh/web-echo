@@ -30,7 +30,6 @@ func main() {
 	log.Println(fmt.Sprintf("Listening on port %v...", *port))
 
 	http.HandleFunc("/", hello)
-	http.ListenAndServe(":80", nil)
 	http.HandleFunc("/greet", mh.greet)
 	//http.ListenAndServe(":80", nil)
 	log.Fatal(http.ListenAndServe(
