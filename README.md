@@ -20,10 +20,12 @@ if port number not provided; default port 80 will be used
 
 custome message will be served on '/greet' endpoint
 
-In this case; 
+In this case;
+
   $ curl http://localhost:8000/greet
   my greeting msg                                                                                                           
 
 If no -m provided; default message is be "Message"
+
   $ curl http://localhost:8000/greet
   Message   
