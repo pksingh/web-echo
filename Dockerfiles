@@ -1,5 +1,0 @@
-FROM scratch
-COPY . .
-CMD ["./web-echo"]
- 
-EXPOSE 80 80
